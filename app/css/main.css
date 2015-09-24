@@ -1,0 +1,11 @@
+h1 {
+	color: white;
+}
+
+p {
+	color: white;
+}
+
+body {
+	background: linear-gradient(45deg, red, blue);
+}

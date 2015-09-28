@@ -44,4 +44,4 @@ gulp.task('watch', function () {
 	]).on('change', browserSync.reload);
 });
 
-gulp.task('defbrowser', ['server', 'watch', 'watchcss']);
+gulp.task('default', ['server', 'watch', 'watchcss']);

@@ -3,35 +3,200 @@
 <head>
 	<meta charset="UTF-8">
 	<!-- Просим IE переключиться в последний режим -->
-	<meta http-eqiv="X-UA-Compatible" content="IT=edge">
+	<meta http-eqiv="X-UA-Compatible" content="IE=edge">
 	<!-- Корректное масштабирование на разных устройствах, initial-scale - для адаптива -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Portfolio</title>
+	<title>Portfolio: maxefi</title>
 	<!-- SEO -->
 	<meta name="description" content="Portfolio frontend developer Efimov Maxim">
 	<meta name="keywords" content="Portfolio frontend developer Efimov Maxim">
 	<meta name="author" content="Efimov Maxim">
 	<!-- favicon -->
-
+	<link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-touch-icon-76x76.png">
+	<link rel="icon" type="image/png" href="favicon/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="favicon/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="/manifest.json">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#db4747">
 	<!-- CSS -->
-	<link rel="stylesheet" href="bower/bootstrap/dist/css/bootstrap.css">
 	<link rel="stylesheet" href="bower/normalize-css/normalize.css">
 	<link rel="stylesheet" href="css/main.css">
 	<!-- font CSS -->
-
+	<link rel="stylesheet" href="css/fira.css">
 	<!-- JS Modernizer-->
-	<script> src="bower/modernizer..."</script>
+	<script> src="bower/modernizr/modernizr.js"</script>
 </head>
 <body>
-	<!-- [if lt IT 8] -->
-	<p class="browserhappy">Ваш браузер <strong>устарел</strong>. Пожалуйста<a href="http://browserhappe.com/">обновить</a>его.</p>
-	<!--[endif]-->
+	<!--[if lt IE 8]>
+	<p class="browserhappy">Ваш браузер <strong>устарел</strong>. Пожалуйста<a href="http://browsehappн.com/">обновить</a>его.</p>
+	<![endif]-->
+	<div class="wrapper">
+		<div class="main-content">
 
-	<h1>asfdfdsf</h1>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis sed laboriosam quibusdam soluta modi tenetur possimus harum ipsa hic a, dolorum nobis dolore ratione, eius iste, facilis perferendis voluptas similique suscipit. Vero quo explicabo, totam numquam? Consectetur qui id quia, voluptatibus minima perferendis impedit non nisi laudantium molestiae commodi repellat dolorum sapiente nihil officia at ullam quo. Consequuntur vel incidunt, atque eaque. Culpa distinctio autem officia tempore provident velit fuga, sit nulla laboriosam magnam nostrum perferendis, porro, quibusdam sunt fugiat neque nobis deserunt possimus officiis ad ducimus quisquam voluptatibus dolore blanditiis! Velit nostrum doloremque libero. Fuga suscipit itaque aut dolorem.</p>
+			<header class="page-header">
+				<div class="container-header">
+					<a class="header-logo-link" href="http://loftschool.com/">
+						<img class="logo-img" src="img/logo.png" height="42" width="243" alt="logo">
+						<h1 class="header-logo-text">Portfolio frontend developer Efimov Maxim</h1>
+					</a>
+					<ul class="socials">
+						<li class="socials-item">
+							<a href="https://github.com/maxefi" target="_blank" class="a socials-link vk">http://vk.com/maxefi</a>
+						</li>
+						<li class="socials-item">
+							<a href="https://twitter.com" target="_blank" class="a socials-link tw">Twitter</a>
+						</li>
+						<li class="socials-item">
+							<a href="https://www.facebook.com" target="_blank" class="a socials-link fb">Facebook</a>
+						</li>
+						<li class="socials-item">
+							<a href="https://github.com/maxefi" target="_blank" class="a socials-link gh">https://github.com/maxefi</a>
+						</li>
+					</ul>
+				</div>
+			</header>
+
+<!-- ЛЕВАЯ ЧАСТЬ -->
+			<div class="container-side">
+			<aside class="sidebar">
+				<nav class="navigation">
+					<ul class="navigation-list">
+						<li class="navigation-item">
+							<a href="#" class="navigation-link current">Обо мне</a>
+						</li>
+						<li class="navigation-item">
+							<a href="#" class="navigation-link">Мои работы</a>
+						</li>
+						<li class="navigation-item">
+							<a href="#" class="navigation-link">Связаться со мной</a>
+						</li>
+					</ul>
+				</nav>
+
+				<address class="contacts">
+					<div class="contacts-header">
+						<span class="header-inner-text">Контакты</span>
+					</div>
+					<ul class="contacts-list">
+						<li class="contacts-item contacts-item-mail">
+							<a href="mailto:maxefi@mail.ru" class="contacts-link">
+								<span class="contacts-text">maxefi@mail.ru</span>
+							</a>
+						</li>
+						<li class="contacts-item contacts-item-phone">
+							<a href="tel: +792174071**" class="contacts-link">
+								<span class="contacts-text">+792174071**</span>
+							</a>
+						</li>
+						<li class="contacts-item contacts-item-skype">
+							<a href="skype:max.efi?chat" class="contacts-link">
+								<span class="contacts-text">max.efi</span>
+							</a>
+						</li>
+					</ul>
+				</address>
+			</aside>
+<!-- ЛЕВАЯ ЧАСТЬ - КОНЕЦ -->
+			</div>
+
+<!-- ПРАВАЯ ЧАСТЬ -->
+			<div class="variable-content">
+
+<!-- ОСНОВНАЯ ИНФОРМА -->
+				<section class="about">
+					<h2 class="about-header">Основная информация</h2>
+						<div class="about-body clearfix">
+								<div class="image-wrap">
+									<div class="avatar-box"><img src="img/ava.png" alt="avatar"></div>
+								</div>
+								<div class="worksheet-wrap">
+									<ul class="worksheet-list">
+										<li class="worksheet-item clearfix">
+											<div class="worksheet-what"><h3>Меня зовут:</h3></div>
+											<div class="worksheet-info"><p>Ефимов Максим Андреевич</p></div>
+										</li>
+										<li class="worksheet-item clearfix">
+											<div class="worksheet-what"><h3>Мой возраст:</h3></div>
+											<div class="worksheet-info"><p class="info">22 года</p></div>
+										</li>
+										<li class="worksheet-item clearfix">
+											<div class="worksheet-what"><h3>Мой город</h3></div>
+											<div class="worksheet-info"><p class="info">Санкт-Петербург</p>
+										</li>
+										<li class="worksheet-item clearfix">
+											<div class="worksheet-what"><h3>Моя специализация:</h3></div>
+											<p class="info">FRONTEND - разработчик</p>
+										</li>
+										<div class="worksheet-item clearfix">
+											<div class="worksheet-what"><h3>Ключевые навыки:</h3></div>
+											<div class="worksheet-info info">
+												<ul class="skills-list">
+													<li class="skill-item">html</li>
+													<li class="skill-item">css</li>
+													<li class="skill-item">javascript</li>
+													<li class="skill-item">gulp</li>
+													<li class="skill-item">git</li>
+												</ul>
+											</div>
+										</div>
+									</ul>
+								</div>
+						</div>
+				</section>
+
+<!-- ОПЫТ РАБОТЫ -->
+				<section class="about">
+					<h2 class="about-header">Опыт работы</h2>
+						<div class="about-body clearfix">
+							<ul class="about-list">
+								<li class="about-item icon-work">
+									<div class="where">ЗАО «АКВА-СЕРВИС» - Конструктор сектора электрооборудования, автоматики и средств связи</div>
+									<div class="period">Июль 2012 - Август 2012</div>
+								</li>
+								<li class="about-item icon-work">
+									<div class="where">ЗАО Банк «Советский» - Специалист группы сопровождения ПО</div>
+									<div class="period">Август 2013 - Август 2015</div>
+								</li>
+							</ul>
+						</div>
+				</section>
+
+<!-- ОБРАЗОВАНИЕ -->
+				<section class="about">
+					<h2 class="about-header">Образование</h2>
+					<div class="about-body clearfix">
+						<ul class="about-list">
+							<li class="about-item icon-college">
+								<div class="where">Высшее. СПБГУ ИНЖЭКОН. Факультет - ФИСЭУ. Специальность - Информационные системы и технологии.</div>
+								<div class="period">Сентябрь 2010 - Июль 2015</div>
+							</li>
+							<li class="about-item icon-course">
+								<div class="where">Курс Loftschool.ru - Комплексное обучение ВЕБ-РАЗРАБОТКЕ</div>
+								<div class="period">Сентябрь 2015 - по настоящее время</div>
+							</li>
+						</ul>
+					</div>
+				</section>
+
+<!-- ПРАВАЯ ЧАСТЬ - КОНЕЦ -->
+			</div>
+<!-- main-content - КОНЕЦ -->
+		</div>
+<!-- wrapper - КОНЕЦ -->
+	</div>
+
+	<footer class="page-footer">
+		<div class="container-footer">
+			<div class="lock"><a href="#" class="lock-inner">Авторизация</a></div>
+			<div class="copyright">&#169; 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его</div>
+		</div>
+	</footer>
 
 	<!-- vendor JS -->
-	<script> src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<!-- если отвалился jquery -->
 	<script>window.jQuery || document.write('<script src="/js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
 	<script src="bower/jquery/dist/jquery.js"></script>

@@ -1,0 +1,137 @@
+.about {
+	background: #eff3f7;
+	border-radius: 4px;
+	margin-bottom: 26px;
+}
+
+.about .about-header {
+	font-family: 'fira_sansbook';
+	font-size: 27px;
+	font-weight: normal;
+	color: #3ba8c0;
+	border-bottom: 2px #3ba8c0 solid;
+	margin: 0 0 23px 0;
+	padding: 13px 23px;
+	display: inline-block;
+}
+
+.about .about-body {
+	padding-bottom: 20px;
+	display: inline-block;
+}
+
+/*АВАТАР*/
+.image-wrap {
+	float: left;
+	margin-left: 55px;
+	margin-top: 18px;
+}
+
+.avatar-box {
+	width: 142px;
+	height: 142px;
+	border-radius: 50%;
+	overflow: hidden;
+	border: 5px solid gray;
+}
+
+.about .worksheet-wrap {
+	float: right;
+	width: 400px;
+}
+
+.worksheet-list {
+
+	list-style: none;
+	padding: 0px;
+	margin-top: 18px;
+	margin-left: 18px;
+}
+
+.worksheet-item {
+	padding-bottom: 18px;
+}
+
+.worksheet-what {
+	display: inline-block;
+	color: #4a545d;
+	font-size: 17px;
+	font-family: 'fira_sansmedium';
+}
+
+.worksheet-info {
+	display: inline;
+	color: #767d84;
+	font-weight: bold;
+	max-width: 218px;
+	margin-left: 8px;
+}
+
+.skills-list {
+	float: right;
+	padding: 0px;
+	width: 220px;
+}
+
+.skill-item {
+	list-style: none;
+	display: inline-block;
+	background: -webkit-linear-gradient(top, #3ba8c0 50%, #2e8ca2 -100%);
+	color: #fff;
+	font-size: 14px;
+	height: 20px;
+	text-align: center;
+	border-radius: 3px;
+	line-height: 20px;
+	padding-left: 14px;
+	padding-right: 14px;
+	margin-bottom: 9px;
+	font-family: 'proxima_nova_cond';
+}
+
+.about-list {
+	list-style: none;
+}
+
+.icon-work {
+	background: url(../img/work.png) no-repeat;
+}
+
+.about-item {
+	padding-bottom: 27px;
+	text-indent: 55px;
+}
+
+.icon-college {
+	background: url(../img/education.png) no-repeat;
+}
+
+.icon-course {
+	background: url(../img/course.png) no-repeat;
+	margin-left: 10px;
+	text-indent: 45px;
+}
+
+.where {
+	font-size: 17px;
+	color: #5a636b;
+	font-family: 'fira_sansbook';
+}
+
+.period {
+	font-size: 15px;
+	color: #828990;
+	font-family: 'fira_sanslight'
+}
+
+
+
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+
+.clearfix: after {
+	clear: both;
+}

@@ -9,6 +9,10 @@ body {
 	color: #4a545d;
 }
 
+a {
+	cursor: url(../img/kursor.png), pointer;
+}
+
 .container {
 	width: 960px;
 	margin: 0 auto;
@@ -101,7 +105,7 @@ body {
 	overflow: hidden;
 	background: #eff3f7;
 	border-radius: 4px;
-	margin-bottom: 26px;
+	margin-bottom: 24px;
 }
 
 .navigation .navigation-list {
@@ -162,7 +166,7 @@ body {
 	color: #fff;
 	margin-left: 20px;
 	font-size: 21px;
-	line-height: 40px;
+	/*line-height: 40px;*/
 }
 
 .contacts-list {
@@ -173,7 +177,7 @@ body {
 
 .contacts-item {
 	text-align: left;
-	text-indent: 65px;
+	text-indent: 83px;
 }
 
 .contacts-link {
@@ -187,19 +191,19 @@ body {
 
 .contacts-item-mail {
 	background: url(../img/mail.png) no-repeat;
-	background-position: 35px;
+	background-position: 42px;
 	background-color: #41b9d4;
 }
 
 .contacts-item-phone {
 	background: url(../img/phone.png) no-repeat;
-	background-position: 35px;
+	background-position: 42px;
 	background-color: #48cbe8;
 }
 
 .contacts-item-skype {
 	background: url(../img/skype.png) no-repeat;
-	background-position: 35px;
+	background-position: 42px;
 	background-color: #51daf8;
 }
 
@@ -240,24 +244,27 @@ body {
 .page-footer .lock {
 	position: absolute;
 	top: 26px;
-	left: 20px;
+	left: 32px;
 }
 
 .lock .lock-inner {
 	display: block;
-	height: 40px;
-	font-family: 'fira_sanslight';
-	font-size: 16px;
-	line-height: 2.2;
-	color: #4a545d;
-	text-decoration: none;
-	text-indent: 5px;
+	/*margin-left: 10px;*/
+	height: 32px;
+	width: 20px;
+	text-indent: -9999px;
+	/*font-family: 'fira_sanslight';*/
+	/*font-size: 16px;*/
+	/*line-height: 2.2;*/
+	/*color: #4a545d;*/
+	/*text-decoration: none;*/
+	/*text-indent: 5px;*/
 	background: url(../img/lock_closed.png) no-repeat;
-	padding-left: 24px;
+	/*padding-left: 24px; - если есть текст, его смещение от замка*/
 }
 
 .lock .lock-inner:hover {
-	text-decoration: underline;
+	/*text-decoration: underline;*/
 	background: url(../img/lock_open.png) no-repeat;
 }
 

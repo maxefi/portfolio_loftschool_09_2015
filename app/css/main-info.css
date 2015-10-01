@@ -10,13 +10,13 @@
 	font-weight: normal;
 	color: #3ba8c0;
 	border-bottom: 2px #3ba8c0 solid;
-	margin: 0 0 23px 0;
-	padding: 13px 23px;
+	margin: 0 0 12px 0;
+	padding: 12px 23px;
 	display: inline-block;
 }
 
 .about .about-body {
-	padding-bottom: 20px;
+	/*padding-bottom: 20px;*/
 	display: inline-block;
 }
 
@@ -32,7 +32,7 @@
 	height: 142px;
 	border-radius: 50%;
 	overflow: hidden;
-	border: 5px solid gray;
+	border: 5px solid #3ba8c0;
 }
 
 .about .worksheet-wrap {
@@ -44,33 +44,33 @@
 
 	list-style: none;
 	padding: 0px;
-	margin-top: 18px;
-	margin-left: 18px;
+	margin-top: 6px;
+	margin-left: 22px;
 }
 
 .worksheet-item {
-	padding-bottom: 18px;
+	padding-bottom: 9px;
 }
 
 .worksheet-what {
-	display: inline-block;
+	float: left;
 	color: #4a545d;
 	font-size: 17px;
 	font-family: 'fira_sansmedium';
 }
 
 .worksheet-info {
-	display: inline;
+	display: inline-block;
 	color: #767d84;
 	font-weight: bold;
-	max-width: 218px;
-	margin-left: 8px;
+	max-width: 264px;
+	margin-left: 14px;
 }
 
 .skills-list {
 	float: right;
 	padding: 0px;
-	width: 220px;
+	width: 210px;
 }
 
 .skill-item {
@@ -83,14 +83,18 @@
 	text-align: center;
 	border-radius: 3px;
 	line-height: 20px;
-	padding-left: 14px;
-	padding-right: 14px;
+	padding-left: 13px;
+	padding-right: 13px;
+	margin-top: 2px;
 	margin-bottom: 9px;
-	font-family: 'proxima_nova_cond';
+	margin-left: 8px;
+	font-family: 'proxima_nova_condensedlight';
 }
 
 .about-list {
 	list-style: none;
+	margin-left: 40px;
+	padding-left: 0px;
 }
 
 .icon-work {
@@ -98,18 +102,19 @@
 }
 
 .about-item {
-	padding-bottom: 27px;
-	text-indent: 55px;
+	padding-bottom: 6px;
+	text-indent: 52px;
 }
 
 .icon-college {
 	background: url(../img/education.png) no-repeat;
+	/*margin-left: -3px;*/
 }
 
 .icon-course {
 	background: url(../img/course.png) no-repeat;
-	margin-left: 10px;
-	text-indent: 45px;
+	margin-left: 9px;
+	text-indent: 43px;
 }
 
 .where {
@@ -121,9 +126,8 @@
 .period {
 	font-size: 15px;
 	color: #828990;
-	font-family: 'fira_sanslight'
+	font-family: 'fira_sanslight';
 }
-
 
 
 .clearfix:before,

@@ -177,12 +177,17 @@ a {
 
 .contacts-item {
 	text-align: left;
-	text-indent: 83px;
+	padding-left: 83px;
+	/*text-indent: 83px;*/
 }
 
 .contacts-link {
 	text-decoration: none;
 	color: #fff;
+}
+
+.contacts-text {
+	word-break: break-all;
 }
 
 .contacts-link:hover {

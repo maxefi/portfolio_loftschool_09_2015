@@ -63,7 +63,7 @@
 	display: inline-block;
 	color: #767d84;
 	font-weight: bold;
-	max-width: 264px;
+	max-width: 206px;
 	margin-left: 14px;
 }
 
@@ -99,22 +99,27 @@
 
 .icon-work {
 	background: url(../img/work.png) no-repeat;
+	background-position: 0 50%;
 }
 
 .about-item {
-	padding-bottom: 6px;
-	text-indent: 52px;
+	padding-left: 50px;
+	margin-bottom: 6px;
+	/*text-indent: 52px;*/
 }
 
 .icon-college {
 	background: url(../img/education.png) no-repeat;
+	background-position: 0 50%;
 	/*margin-left: -3px;*/
 }
 
 .icon-course {
 	background: url(../img/course.png) no-repeat;
 	margin-left: 9px;
-	text-indent: 43px;
+	padding-left: 41px;
+	background-position: 0 50%;
+	/*text-indent: 43px;*/
 }
 
 .where {

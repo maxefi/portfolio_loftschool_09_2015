@@ -1,0 +1,26 @@
+.contact {
+	min-height: 855px;
+	background: #eff3f7;
+	border-radius: 4px;
+	margin-bottom: 26px;
+	overflow: hidden;
+}
+
+.contact .contact-header {
+	display: block;
+	width: 100%;
+	margin: 0 0 30px 0;
+	padding: 40px 0;
+	color: #ffffff;
+	font-size: 27px;
+	font-family: 'fira_sansbook';
+	background-color: #48cbe8;
+	text-align: center;
+	font-weight: normal;
+	border-bottom: 17px #67dffa solid;
+}
+
+.contact .contact-body {
+	/*padding-bottom: 20px;*/
+	display: inline-block;
+}

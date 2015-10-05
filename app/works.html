@@ -25,6 +25,7 @@
 	<link rel="stylesheet" href="bower/normalize-css/normalize.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/main-info.css">
+	<link rel="stylesheet" href="css/works.css">
 	<!-- font CSS -->
 	<link rel="stylesheet" href="fonts/Fira/fira.css">
 	<link rel="stylesheet" href="fonts/Proxima-Nova/proxima.css">
@@ -66,10 +67,10 @@
 			<aside class="sidebar">
 				<nav class="navigation">
 					<ul class="navigation-list">
-						<li class="navigation-item current">
-							<a href="index.html" class="navigation-link current">Обо мне</a>
-						</li>
 						<li class="navigation-item">
+							<a href="index.html" class="navigation-link">Обо мне</a>
+						</li>
+						<li class="navigation-item current">
 							<a href="works.html" class="navigation-link">Мои работы</a>
 						</li>
 						<li class="navigation-item">
@@ -107,79 +108,55 @@
 			<div class="variable-content">
 
 <!-- ОСНОВНАЯ ИНФОРМАЦИЯ -->
-				<section class="about">
-					<h2 class="about-header">Основная информация</h2>
-						<div class="about-body clearfix">
-								<div class="image-wrap">
-									<div class="avatar-box"><img src="img/ava.png" alt="avatar"></div>
-								</div>
-								<div class="worksheet-wrap">
-									<ul class="worksheet-list">
-										<li class="worksheet-item clearfix">
-											<div class="worksheet-what">Меня зовут:</div>
-											<div class="worksheet-info">Ефимов Максим Андреевич</div>
-										</li>
-										<li class="worksheet-item clearfix">
-											<div class="worksheet-what">Мой возраст:</div>
-											<div class="worksheet-info">22 года</div>
-										</li>
-										<li class="worksheet-item clearfix">
-											<div class="worksheet-what">Мой город</div>
-											<div class="worksheet-info">Санкт-Петербург</div>
-										</li>
-										<li class="worksheet-item clearfix">
-											<div class="worksheet-what">Моя специализация:</div>
-											<div class="worksheet-info">FRONTEND - разработчик</div>
-										</li>
-										<li class="worksheet-item clearfix">
-											<div class="worksheet-what">Ключевые навыки:</div>
-											<div class="worksheet-info info">
-												<ul class="skills-list">
-													<li class="skill-item">html</li>
-													<li class="skill-item">css</li>
-													<li class="skill-item">javascript</li>
-													<li class="skill-item">gulp</li>
-													<li class="skill-item">git</li>
-												</ul>
-											</div>
-										</li>
-									</ul>
-								</div>
-						</div>
-				</section>
-
-<!-- ОПЫТ РАБОТЫ -->
-				<section class="about">
-					<h2 class="about-header">Опыт работы</h2>
-						<div class="about-body clearfix">
-							<ul class="about-list">
-								<li class="about-item icon-work">
-									<div class="where">ЗАО «АКВА-СЕРВИС» - Конструктор секторатор электрооборудования</div>
-									<div class="period">Июль 2012 - Август 2012</div>
+				<section class="works">
+					<h2 class="works-header">Мои работы</h2>
+						<div class="works-body">
+							<ul class="works-list">
+								<li class="works-item">
+									<div class="works-hover effect">
+										<img src="img/site1.png" class="works-image" alt="site1"/>
+										<div class="works-image-hover">
+            								<a class="works-item-hover-btn" href="#" title="View More">Подробнее</a>
+          								</div>
+									</div>
+									<h3 class="works-title" href="#">www.site.ru</h3>
+									<p class="works-info">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, accusantium?</p>
 								</li>
-								<li class="about-item icon-work">
-									<div class="where">ЗАО Банк «Советский» - Специалист группы сопровождения ПО</div>
-									<div class="period">Август 2013 - Август 2015</div>
+								<li class="works-item">
+									<div class="works-hover effect">
+										<img src="img/site2.png" class="works-image" alt="site1"/>
+										<div class="works-image-hover">
+            								<a class="works-item-hover-btn" href="#" title="View More">Подробнее</a>
+          								</div>
+									</div>
+									<h3 class="works-title" href="#">www.site.ru</h3>
+									<p class="works-info">Lorem ipsum dolor sit amet.</p>
+								</li>
+								<li class="works-item">
+									<div class="works-hover effect">
+										<img src="img/site3.png" class="works-image" alt="site1"/>
+										<div class="works-image-hover">
+            								<a class="works-item-hover-btn" href="#" title="View More">Подробнее</a>
+          								</div>
+									</div>
+									<h3 class="works-title" href="#">www.site.ru</h3>
+									<p class="works-info">Lorem ipsum dolor sit amet.</p>
+								</li>
+								<li class="works-item">
+									<div class="works-hover effect">
+										<img src="img/site4.png" class="works-image" alt="site1"/>
+										<div class="works-image-hover">
+            								<a class="works-item-hover-btn" href="#" title="View More">Подробнее</a>
+          								</div>
+									</div>
+									<h3 class="works-title" href="#">www.site.ru</h3>
+									<p class="works-info">Lorem ipsum dolor sit amet.</p>
+								</li>
+								<li class="works-item add-item">
+									<a class="works-add-link" href="#">Добавить проект</a>
 								</li>
 							</ul>
 						</div>
-				</section>
-
-<!-- ОБРАЗОВАНИЕ -->
-				<section class="about">
-					<h2 class="about-header">Образование</h2>
-					<div class="about-body clearfix">
-						<ul class="about-list">
-							<li class="about-item icon-college">
-								<div class="where">Высшее. СПБГУ ИНЖЭКОН. Информационные системы и технологии.</div>
-								<div class="period">Сентябрь 2010 - Июль 2015</div>
-							</li>
-							<li class="about-item icon-course">
-								<div class="where">Курс Loftschool.ru - Комплексное обучение ВЕБ-РАЗРАБОТКЕ</div>
-								<div class="period">Сентябрь 2015 - по настоящее время</div>
-							</li>
-						</ul>
-					</div>
 				</section>
 
 <!-- ПРАВАЯ ЧАСТЬ - КОНЕЦ -->

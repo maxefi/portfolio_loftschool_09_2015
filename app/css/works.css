@@ -1,0 +1,145 @@
+.works {
+	background: #eff3f7;
+	border-radius: 4px;
+	margin-bottom: 26px;
+	min-height: 855px;
+}
+
+.works .works-header {
+	font-family: 'fira_sansbook';
+	font-size: 27px;
+	font-weight: normal;
+	color: #3ba8c0;
+	border-bottom: 2px #3ba8c0 solid;
+	margin: 0 0 27px 0;
+	padding: 12px 23px;
+	display: inline-block;
+}
+
+.works .works-body {
+	width: 610px;
+	margin: 0 20px;
+}
+
+.works-list {
+	margin: 0;
+	padding: 0;
+	font-size: 0;
+}
+
+.works-item {
+	width: 183px;
+	min-height: 240px;
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 30px;
+	margin-bottom: 5px;
+	list-style: none;
+	text-align: center;
+	/*border: 1px solid #3ba8c0;*/
+}
+
+.works-item:nth-child(3n) {
+	margin-right: 0;
+}
+
+
+
+/*
+██╗  ██╗ ██████╗ ██╗   ██╗███████╗██████╗
+██║  ██║██╔═══██╗██║   ██║██╔════╝██╔══██╗
+███████║██║   ██║██║   ██║█████╗  ██████╔╝
+██╔══██║██║   ██║╚██╗ ██╔╝██╔══╝  ██╔══██╗
+██║  ██║╚██████╔╝ ╚████╔╝ ███████╗██║  ██║
+╚═╝  ╚═╝ ╚═════╝   ╚═══╝  ╚══════╝╚═╝  ╚═╝*/
+
+.works-hover {
+  position: relative;
+  border: 2px solid #3ba8c0;
+  border-radius: 4px;
+  margin-bottom: 6px;
+}
+
+.works-hover .works-image {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.effect {
+  width: 179px;
+  height: 127px;
+  overflow: hidden;
+}
+
+.effect .works-image-hover {
+  position: absolute;
+  top: -100%;
+  left: 0px;
+  background: rgba(1, 108, 164, 0.75);
+  width: 100%;
+  height: 100%;
+  color: #3ba8c0;
+  -o-transition: all 0.3s cubic-bezier(0.4, 0, 1, 1) 0.3s;
+  -moz-transition: all 0.3s cubic-bezier(0.4, 0, 1, 1) 0.3s;
+  -webkit-transition: all 0.3s cubic-bezier(0.4, 0, 1, 1) 0.3s;
+  -ms-transition: all 0.3s cubic-bezier(0.4, 0, 1, 1) 0.3s;
+  transition: all 0.3s cubic-bezier(0.4, 0, 1, 1) 0.3s;
+}
+
+.effect .works-image-hover .works-item-hover-btn {
+  width: 90px;
+  text-align: center;
+  display: block;
+  background: transparent;
+  color: white;
+  text-decoration: none;
+  padding: 0;
+  border: 3px solid white;
+  border-radius: 6px;
+  margin: 53px auto;
+  font-family: 'fira_sansbooks';
+  font-size: 13px;
+}
+
+.effect:hover .works-image-hover {
+  top: 0px;
+}
+
+
+
+
+.works-title {
+	font-family: 'fira_sanslight_italic';
+	font-size: 13px;
+	text-decoration: none;
+	color: #3ba8c0;
+	font-weight: normal;
+	margin: 0 0 6px 0;
+}
+
+.works-info {
+	font-family: 'fira_sanslight';
+	font-size: 15px;
+	margin: 0;
+	padding-bottom: 40px;
+	line-height: 1.2em;
+}
+
+.works-item .add-item {
+	min-height: 130px;
+}
+
+.works-add-link {
+	display: block;
+	height: 47px;
+	width: 179px;
+	font-family: 'fira_sanslight';
+	font-size: 13px;
+	text-decoration: none;
+	color: #3ba8c0;
+	padding-top: 80px;
+	background: #edf8fc url(../img/add-item.png) no-repeat center 35px;
+	border: 1px dashed #3ba8c0;
+	border-radius: 4px;
+}

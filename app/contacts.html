@@ -107,13 +107,42 @@
 
 <!-- ПРАВАЯ ЧАСТЬ -->
 			<div class="variable-content">
-
-
-
 				<section class="contact">
 					<h2 class="contact-header">У вас интересный проект? Напишите мне!</h2>
 						<div class="contact-body">
-
+							<form action="contacts.html" name="contactform" class="contact-form">
+								<div class="form-cell clearfix">
+									<div class="left-pos">
+										<label for="Name" class="contact-label">Имя</label>
+										<input type="text" placeholder="Как к вам обращаться?" id="Name" class="contact-input">
+									</div>
+									<div class="right-pos">
+									  <label for="Email" class="contact-label">Email</label>
+									  <input type="text" placeholder="Куда мне писать" id="Email" class="contact-input">
+									</div>
+								</div>
+								<div class="form-cell">
+									  <label for="Message" class="contact-label">Сообщение</label>
+										<textarea name="massageform" placeholder="Краткое описание проекта" id="Message" class="contact-text" cols="30" rows="10"></textarea>
+								</div>
+								<div class="form-cell clearfix">
+									<label class="contact-label" for="Captcha">Введите код, указанный на картинке</label>
+									<div class="left-pos">
+										<img src="img/captcha.png" class="contact-captcha" alt="Обновить">
+									</div>
+									<div class="right-pos">
+										<input type="text" placeholder="Введите код" class="contact-input contact-input-captcha">
+									</div>
+								</div>
+								<div class="form-cell clearfix">
+									<div class="left-pos">
+										<input type="submit" value="Отправить" class="contact-btn contact-btn-submit">
+									</div>
+									<div class="right-pos">
+										<input type="reset" value="Очистить" class="contact-btn contact-btn-reset">
+									</div>
+								</div>
+							</form>
 						</div>
 				</section>
 
@@ -132,7 +161,7 @@
 <!-- FOOTER -->
 	<footer class="page-footer">
 		<div class="container">
-			<div class="lock"><a href="#" class="lock-inner">Авторизация</a></div>
+			<div class="lock"><a href="enter.html" class="lock-inner">Авторизация</a></div>
 			<div class="copyright">&#169; 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его</div>
 		</div>
 	</footer>

@@ -13,7 +13,7 @@ gulp.task('css', function () {
     .pipe(minifyCSS({compatibility: 'ie8'}))
     .pipe(rename('main.min.css'))
     .pipe(autoprefixer('last 2 versions', '> 1%', 'ie 8'))
-    .pipe(gulp.dest('app/css/'))
+    .pipe(gulp.dest('app/dist/'))
     .pipe(notify({
     	'title': 'CSS',
     	'message': "optimized"

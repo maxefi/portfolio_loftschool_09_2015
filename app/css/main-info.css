@@ -141,6 +141,6 @@
 	display: table;
 }
 
-.clearfix: after {
+.clearfix:after {
 	clear: both;
 }

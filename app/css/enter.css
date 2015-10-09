@@ -1,5 +1,4 @@
 .login-wrapper {
-	border: 1px solid;
 	position: absolute;
 	top: 30%;
 	left: 50%;
@@ -7,5 +6,26 @@
 	width: 590px;
 	height: 475px;
 	border-radius: 5px;
+	background: #eff3f7;
+	border-radius: 5px;
+	overflow: hidden;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
 
+.enter-header {
+	display: block;
+	width: 100%;
+	margin: 0 0 30px 0;
+	padding: 15px 0;
+	color: #ffffff;
+	font-size: 40px;
+	font-family: 'fira_sansbook';
+	background-color: #48cbe8;
+	text-align: center;
+	font-weight: normal;
+	border-bottom: 17px #67dffa solid;
+}
+
+.login-body {
+	padding: 0 20px;
 }

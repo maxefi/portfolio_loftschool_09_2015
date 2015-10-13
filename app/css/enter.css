@@ -3,6 +3,7 @@
 	top: 30%;
 	left: 50%;
 	margin: -145px 0 0 -295px;
+	padding-bottom: 40px;
 	width: 590px;
 	height: 475px;
 	border-radius: 5px;
@@ -15,7 +16,7 @@
 .enter-header {
 	display: block;
 	width: 100%;
-	margin: 0 0 30px 0;
+	margin: 0 0 10px 0;
 	padding: 15px 0;
 	color: #ffffff;
 	font-size: 40px;
@@ -26,6 +27,69 @@
 	border-bottom: 17px #67dffa solid;
 }
 
-.login-body {
-	padding: 0 20px;
+.login-content {
+	padding: 0;
+}
+
+.login-form {
+	width: 425px;
+	margin: 0 auto;
+}
+
+.form-block {
+	margin-bottom: 10px;
+}
+
+.login-label {
+	color: #b2bac1;
+	font-size: 36px;
+	text-align: center;
+	display: block;
+	font-family: 'fira_sansbook';
+}
+
+.login-input {
+	display: block;
+	box-sizing: border-box;
+	min-width: 200px;
+	width: 100%;
+	border: 1px solid #3ba8c0;
+	border-radius: 5px;
+	color: #48CDE8;
+	padding: 23px;
+	background: #fbfcfd;
+	margin-bottom: 15px;
+}
+
+.login-input::-webkit-input-placeholder,
+.login-text::-webkit-input-placeholder {
+	color: #48CBE8;
+}
+
+.login-input::-moz-placeholder,
+.login-text::-moz-placeholder {
+	color: #48cbe8;
+}
+
+.login-btn-center {
+	text-align: center;
+}
+
+.login-btn {
+	color: #fbfcfd;
+	border: 0;
+	padding: 0 60px;
+}
+
+.login-btn:hover {
+	border: 0;
+	padding-top: 2px; /*если не задавать высоту кнопки, то только так*/
+}
+
+.login-btn-submit {
+	font-family: 'fira_sansbook';
+	font-size: 36px;
+	background: #48CBE8;
+	border-bottom: 2px solid #19aaca;
+	border-radius: 5px;
 }

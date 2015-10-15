@@ -1,5 +1,5 @@
 .contact {
-	min-height: 855px;
+	/*min-height: 855px;*/
 	background: #eff3f7;
 	border-radius: 4px;
 	margin-bottom: 26px;
@@ -9,7 +9,7 @@
 .contact .contact-header {
 	display: block;
 	width: 100%;
-	margin: 0 0 30px 0;
+	margin: 0 0 20px 0;
 	padding: 40px 0;
 	color: #ffffff;
 	font-size: 27px;
@@ -17,7 +17,7 @@
 	background-color: #48cbe8;
 	text-align: center;
 	font-weight: normal;
-	border-bottom: 17px #67dffa solid;
+	border-bottom: 17px solid #67dffa;
 }
 
 .contact-body {
@@ -60,11 +60,15 @@
 	padding: 10px;
 }
 
+.add-input::-webkit-input-placeholder,
+.add-text::-webkit-input-placeholder,
 .contact-input::-webkit-input-placeholder,
 .contact-text::-webkit-input-placeholder {
 	color: #48CBE8;
 }
 
+.add-input::-moz-placeholder,
+.add-text::-moz-placeholder,
 .contact-input::-moz-placeholder,
 .contact-text::-moz-placeholder {
 	color: #48cbe8;

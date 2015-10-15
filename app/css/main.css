@@ -9,7 +9,9 @@ body {
 	color: #4a545d;
 }
 
-a {
+a,
+input[type="file"],
+input[type="submit"] {
 	cursor: url(../img/kursor.png), pointer;
 }
 

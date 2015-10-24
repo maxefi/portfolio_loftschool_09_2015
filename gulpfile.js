@@ -102,10 +102,20 @@ gulp.task("t-html", function () {
 	}));
 });
 
+// PHP TASK - t-php
+gulp.task("t-php", function () {
+    return gulp.src("./app/*.php")
+        .pipe(gulp.dest("dist"))
+        .pipe(notify({
+        'title': 'PHP',
+        'message': "TRANSFERED TO DIST"
+    }));
+});
+
 // CSS TASK - t-css
 gulp.task("t-css", function () {
     return gulp.src("./app/css/*.css")
-    	.pipe(concatCSS("main.min.css"))
+    	// .pipe(concatCSS("main.min.css"))
         .pipe(gulpif("*.css", minifyCSS({compatibility: "ie8"})))
         .pipe(autoprefixer('last 2 versions', '> 1%', 'ie 8'))
         .pipe(gulp.dest("dist/css"))
@@ -118,7 +128,7 @@ gulp.task("t-css", function () {
 // JS TASK - t-js
 gulp.task("t-js", function () {
     return gulp.src("./app/js/*.js")
-        .pipe(gulpif("*.js", uglify()))
+        // .pipe(gulpif("*.js", uglify()))
         .pipe(gulp.dest("dist/js"))
         .pipe(notify({
     	'title': 'JS',
@@ -139,6 +149,12 @@ gulp.task("t-fonts", function() {
         .pipe(gulp.dest("./dist/fonts/"))
 });
 
+//IMG TASK - t-img
+gulp.task("t-img", function() {
+    return gulp.src("./app/img/**")
+        .pipe(gulp.dest("./dist/img/"))
+});
+
 //FAVICON TASK - t-favi
 gulp.task("t-favi", function () {
 	return gulp.src("./app/favicon/*")
@@ -153,7 +169,7 @@ gulp.task("clean-dist", function () {
 //DIST SERVER TASK - server-dist
 gulp.task("server-dist", function () {
     browserSync.init({
-        port: 8000,
+        port: 7000,
         server: { baseDir: "./dist" }
     });
 });
@@ -173,25 +189,25 @@ gulp.task("size-app", function () {
 });
 
 //DIST BUILD TASK - dist
-gulp.task("dist", ["t-html", "t-css", "t-js", "t-bower", "t-fonts", "t-favi", "size-app"], function () {
+gulp.task("dist", ["t-html", "t-php", "t-css", "t-js", "t-bower", "t-fonts", "t-img", "t-favi", "size-app"], function () {
     return gulp.src("dist/**/*").pipe(size({title: "DIST size: "}));
 });
 
 //DIST ON READY BUILD TASK - build
-gulp.task("build", ["clean-dist", "wiredep-bower"], function () {
+gulp.task("build", ["clean-dist"], function () { //, "wiredep-bower"
     gulp.start("dist");
 });
 
 // Отправка проекта на сервер
 gulp.task("deploy", function() {
     var conn = ftp.create({
-        host: "host",
-        user: "user",
-        password: "password",
+        host: "maxefi.ru",
+        user: "dist@maxefi.ru",
+        password: "relik5136051",
         parallel: 10,
         log: gutil.log
     });
 
     return gulp.src(["./dist/**/*"], { base: "./dist/", buffer: false})
-            .pipe(conn.dest("/public_html/"));
+            .pipe(conn.dest("/public_html"));
 });

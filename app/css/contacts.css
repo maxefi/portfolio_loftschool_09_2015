@@ -58,6 +58,7 @@
 	font-family: 'fira_sansbook';
 	font-size: 13px;
 	padding: 10px;
+	outline: none; //сброс при фокусе
 }
 
 .add-input::-webkit-input-placeholder,
@@ -96,10 +97,16 @@
 	border: 0;
 	color: white;
 	border-radius: 5px;
+	outline: none;
 }
 
 .contact-btn:hover {
 	border-bottom: 0;
+}
+
+.contact-btn:active {
+	border-bottom: 0;
+	border-top: 2px solid #19aaca;
 }
 
 .contact-btn-submit {
@@ -107,7 +114,22 @@
 	background: #48cde8;
 }
 
+.contact-btn-submit:active {
+	border-bottom: 0;
+	border-top: 2px solid #19aaca;
+}
+
 .contact-btn-reset {
 	border-bottom: 2px solid #616e79;
 	background: #95a1ab;
+}
+
+.contact-btn-reset:active {
+	border-bottom: 0;
+	border-top: 2px solid #616e79;
+}
+
+.form-warning {
+	background-color: #fad6d4;
+	border-color: #f97e76;
 }

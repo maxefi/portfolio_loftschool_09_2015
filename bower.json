@@ -1,10 +1,11 @@
 {
   "name": "portfolio",
   "dependencies": {
-    "jquery": "~2.1.4",
+  	"jquery": "1.11.3",
     "normalize-css": "normalize.css#~3.0.3",
     "modernizr": "2.7.2",
     "jquery-placeholder": "~2.1.3",
-    "bPopup": "^0.11.0"
+    "bPopup": "bpopup#~0.11.0",
+    "qtip2": "~2.1.1"
   }
 }

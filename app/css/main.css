@@ -69,8 +69,8 @@ input[type="submit"] {
 .socials .socials-item {
 	list-style: none;
 	display: inline-block;
-	height: 47px;
-	width: 47px;
+	height: 48px;
+	width: 48px;
 	margin-left: 19px;
 	/* Отступ у таких элементов всегда слева*/
 }
@@ -168,6 +168,7 @@ input[type="submit"] {
 	color: #fff;
 	margin-left: 20px;
 	font-size: 21px;
+	font-style: normal;
 	/*line-height: 40px;*/
 }
 
@@ -190,6 +191,7 @@ input[type="submit"] {
 
 .contacts-text {
 	word-break: break-all;
+	font-style: normal;
 }
 
 .contacts-link:hover {
@@ -291,4 +293,15 @@ input[type="submit"] {
 .page-footer {
 	height: 80px;
     margin-top: -80px;
+}
+
+.has-error {
+	background-color: #f2cccd !important;
+	border-color: #f97e76 !important;
+}
+
+.has-error-file {
+	background-color: #f2cccd !important;
+	border-color: #f97e76 !important;
+	border-right: none !important;
 }

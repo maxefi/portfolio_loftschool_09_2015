@@ -67,7 +67,7 @@ gulp.task("watch-bower", function () {
 });
 
 // DEFAULT TASK
-gulp.task("default", ["watch", "server", "wiredep-bower", "watch-bower"]);
+gulp.task("default", ["watch", "server"]);
 
 var log = function (error) {
     console.log([

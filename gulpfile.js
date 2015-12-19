@@ -8,7 +8,7 @@
 var gulp = require("gulp"),
 		browserSync = require('browser-sync'),
 		del = require("del"),
-        gutil = require("gulp-util"),
+    gutil = require("gulp-util"),
 		concatCSS = require('gulp-concat-css'),
 		minifyCSS = require('gulp-minify-css'),
 		uglify = require('gulp-uglify'),

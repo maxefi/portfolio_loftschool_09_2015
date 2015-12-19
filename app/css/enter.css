@@ -1,8 +1,11 @@
 .login-wrapper {
 	position: absolute;
-	top: 30%;
-	left: 50%;
-	margin: -145px 0 0 -295px;
+	top: 0;
+	left: 0;
+  right: 0;
+  bottom: 80px;
+  margin: auto;
+	/*margin: -145px 0 0 -295px;*/
 	padding-bottom: 40px;
 	width: 590px;
 	height: 475px;

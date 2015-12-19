@@ -14,7 +14,6 @@ var gulp = require("gulp"),
 		uglify = require('gulp-uglify'),
 		gulpif = require("gulp-if"),
 		autoprefixer = require("gulp-autoprefixer"),
-		ftp = require("vinyl-ftp"),
 		wiredep = require("wiredep").stream,
 		size = require("gulp-size"),
 		notify = require('gulp-notify');
@@ -68,7 +67,7 @@ gulp.task("watch-bower", function () {
 });
 
 // DEFAULT TASK
-gulp.task("default", ["watch", "server", "wiredep-bower", "watch-bower"]);
+gulp.task("default", ["watch", "server"]);
 
 var log = function (error) {
     console.log([
@@ -196,18 +195,4 @@ gulp.task("dist", ["t-html", "t-php", "t-css", "t-js", "t-bower", "t-fonts", "t-
 //DIST ON READY BUILD TASK - build
 gulp.task("build", ["clean-dist"], function () { //, "wiredep-bower"
     gulp.start("dist");
-});
-
-// Отправка проекта на сервер
-gulp.task("deploy", function() {
-    var conn = ftp.create({
-        host: "maxefi.ru",
-        user: "dist@maxefi.ru",
-        password: "relik5136051",
-        parallel: 10,
-        log: gutil.log
-    });
-
-    return gulp.src(["./dist/**/*"], { base: "./dist/", buffer: false})
-            .pipe(conn.dest("/public_html"));
 });

@@ -1,0 +1,15 @@
+{
+    "name": "snake/portfolio",
+    "authors": [
+        {
+            "name": "Efimov Maxim",
+            "email": "maxefi@mail.ru"
+        }
+    ],
+    "config": {
+      "vendor-dir": "vendor"
+    },
+    "require": {
+      "klein/klein": "dev-master"
+    }
+}

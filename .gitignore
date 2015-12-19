@@ -2,3 +2,5 @@ app/bower
 node_modules
 dist
 composer.phar
+
+/vendor/

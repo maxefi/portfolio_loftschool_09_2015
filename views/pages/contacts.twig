@@ -1,0 +1,41 @@
+{% extends 'main_template.twig' %}
+
+{% block content %}
+<section class="contact">
+  <h2 class="contact-header">У вас интересный проект? Напишите мне!</h2>
+    <div class="contact-body">
+      <form action="contacts.html" name="contactform" class="contact-form">
+        <div class="form-cell clearfix">
+          <div class="left-pos">
+            <label for="nameform" class="contact-label">Имя</label>
+            <input type="text" name="nameform" id="nameform" placeholder="Как к вам обращаться?" class="contact-input" qtip-content="Укажите как вас зовут" qtip-position="left">
+          </div>
+          <div class="right-pos">
+            <label for="addressform" class="contact-label">Email</label>
+            <input type="text" name="addressform" placeholder="Куда мне писать" id="mail" class="contact-input" qtip-content="Укажите ваш email" qtip-position="right">
+          </div>
+        </div>
+        <div class="form-cell">
+            <label for="massageform" class="contact-label">Сообщение</label>
+            <textarea name="massageform" id="massageform" placeholder="Краткое описание проекта" class="contact-text" cols="30" rows="10" qtip-content="Добавьте описание" qtip-position="right"></textarea>
+        </div>
+        <div class="form-cell clearfix">
+          <div class="left-pos">
+            <div class="g-recaptcha" data-sitekey="6LfUcQ8TAAAAAFigLANO3tc1No-QppJ3iOpVPYh9"></div>
+          </div>
+          <div class="right-pos">
+            <div id="robot" class="captcha-ans captcha-mes" qtip-content="CAPTCHA!1" qtip-position="right"></div>
+          </div>
+        </div>
+        <div class="form-cell clearfix">
+          <div class="left-pos">
+            <input type="submit" value="Отправить" class="contact-btn contact-btn-submit">
+          </div>
+          <div class="right-pos">
+            <input type="reset" value="Очистить" class="contact-btn contact-btn-reset">
+          </div>
+        </div>
+      </form>
+    </div>
+</section>
+{% endblock %}

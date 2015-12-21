@@ -1,0 +1,100 @@
+{% extends 'main_template.twig' %}
+
+{% block content %}
+<!-- ОСНОВНАЯ ИНФОРМАЦИЯ -->
+<section class="works">
+  <h2 class="works-header">Мои работы</h2>
+    <div class="works-body">
+      <ul class="works-list">
+        <li class="works-item">
+          <div class="works-hover effect">
+            <img src="{{ config.base_url }}app/img/site1.png" class="works-image" alt="site1"/>
+            <div class="works-image-hover">
+                    <a class="works-item-hover-btn" href="#" title="View More">Подробнее</a>
+                  </div>
+          </div>
+          <h3 class="works-title" href="#">www.site.ru</h3>
+          <p class="works-info">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, accusantium?</p>
+        </li>
+        <li class="works-item">
+          <div class="works-hover effect">
+            <img src="{{ config.base_url }}app/img/site2.png" class="works-image" alt="site1"/>
+            <div class="works-image-hover">
+                    <a class="works-item-hover-btn" href="#" title="View More">Подробнее</a>
+                  </div>
+          </div>
+          <h3 class="works-title" href="#">www.site.ru</h3>
+          <p class="works-info">Lorem ipsum dolor sit amet.</p>
+        </li>
+        <li class="works-item">
+          <div class="works-hover effect">
+            <img src="{{ config.base_url }}app/img/site3.png" class="works-image" alt="site1"/>
+            <div class="works-image-hover">
+                    <a class="works-item-hover-btn" href="#" title="View More">Подробнее</a>
+                  </div>
+          </div>
+          <h3 class="works-title" href="#">www.site.ru</h3>
+          <p class="works-info">Lorem ipsum dolor sit amet.</p>
+        </li>
+        <li class="works-item">
+          <div class="works-hover effect">
+            <img src="{{ config.base_url }}app/img/site4.png" class="works-image" alt="site1"/>
+            <div class="works-image-hover">
+                    <a class="works-item-hover-btn" href="#" title="View More">Подробнее</a>
+                  </div>
+          </div>
+          <h3 class="works-title" href="#">www.site.ru</h3>
+          <p class="works-info">Lorem ipsum dolor sit amet.</p>
+        </li>
+        <li class="works-item add-item">
+          <a id="works-add-item" class="works-add-link" href="#">Добавить проект</a>
+        </li>
+      </ul>
+    </div>
+</section>
+{% endblock %}
+
+{% block popup %}
+<!-- ADD POPUP -->
+<div id="popup" class="add-wrapper clearfix">
+  <div class="add-heading clearfix">
+    <div class="left-pos">
+      <h3 class="add-heading-title">Добавление проекта</h3>
+    </div>
+    <div class="right-pos">
+      <a href="#" class="add-close b-close">
+        <span class="add-close-hidden-text">Закрыть</span>
+      </a>
+    </div>
+  </div>
+    <form name="addform" id="add-new-project" class="add-form">
+      <div class="server-ans success-mes"></div>
+      <div class="server-ans error-mes"></div>
+      <label for="project-name" class="add-label">Название проекта</label>
+      <input type="text" name="project-name" id="project-name" class="add-input" placeholder="Введите название" qtip-content="Тут должно быть название" qtip-position="left">
+      <label for="fileupload" class="add-label">Картинка проекта</label>
+      <div class="add-file-wrapper clearfix">
+
+          <input type="text" id="filename" class="add-input add-file-text-wrapper left-pos" readonly name="project-img" placeholder="Загрузите изображение">
+
+        <label id="addfile" class="add-file-btn-wrapper right-pos">
+          <input type="file" id="fileupload" class="add-file-btn add-input" qtip-content="Будьте так любезны" qtip-position="right">
+          <!-- <input type="hidden" id="project-fileurl" name="project-fileurl"> -->
+        </label>
+
+
+        <!-- <div class="add-file-text-wrapper left-pos">
+          <span class="add-file-text" qtip-content="Добавьте изображение" qtip-position="left">Загрузите изображение</span>
+        </div>
+        <div id="addfile" class="add-file-btn-wrapper right-pos">
+          <input type="file" name="project-img" value="" class="add-input add-file-btn" placeholder="Загрузите изображение" qtip-content="Добавьте изображение" qtip-position="right">
+        </div> -->
+      </div>
+        <label for="project-url" class="add-label">URL проекта</label>
+        <input type="text" name="project-url" id="project-url" class="add-input" placeholder="Добавьте ссылку" id="url" qtip-content="А тут, ссылка" qtip-position="left">
+        <label for="project-text" class="add-label">Описание проекта</label>
+        <textarea name="project-text" id="project-text" cols="30" rows="10" class="add-text" placeholder="Пара слов о вашем проекте" qtip-content="Поподробнее, да" qtip-position="left"></textarea>
+        <input type="submit" name="addsubmit" class="add-submit" value="Добавить">
+    </form>
+</div>
+{% endblock %}

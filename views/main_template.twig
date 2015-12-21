@@ -1,0 +1,34 @@
+{% include '_parts/head.twig' %}
+<body>
+  <!--[if lt IE 8]>
+  <p class="browserhappy">Ваш браузер <strong>устарел</strong>. Пожалуйста<a href="http://browsehappн.com/">обновить</a>его.</p>
+  <![endif]-->
+  <div class="wrapper">
+
+  {% if logged is not defined %}
+    {% include '_parts/header.twig' %}
+
+      <div class="container clearfix">
+<!-- ЛЕВАЯ ЧАСТЬ -->
+        {% include '_parts/aside.twig' %}
+<!-- ЛЕВАЯ ЧАСТЬ - КОНЕЦ -->
+
+<!-- ПРАВАЯ ЧАСТЬ -->
+      <div class="variable-content">
+        {% block content %}{% endblock %}
+<!-- ПРАВАЯ ЧАСТЬ - КОНЕЦ -->
+      </div>
+<!-- container - КОНЕЦ -->
+      </div>
+  {% else %}
+    {% block auth %}{% endblock %}
+  {% endif %}
+<!-- wrapper - КОНЕЦ -->
+  </div>
+
+<!-- FOOTER -->
+  {% include '_parts/footer.twig' %}
+{% block popup %}{% endblock %}
+  {% include '_parts/scripts.twig' %}
+</body>
+</html>

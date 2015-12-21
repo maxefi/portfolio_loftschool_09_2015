@@ -1,0 +1,50 @@
+<aside class="sidebar">
+  <nav class="navigation">
+    <ul class="navigation-list">
+      <li class="navigation-item
+        {% if current == 'index' %}
+          current
+        {% endif %}
+      ">
+        <a href="/" class="navigation-link current">Обо мне</a>
+      </li>
+      <li class="navigation-item
+        {% if current == 'portfolio' %}
+          current
+        {% endif %}
+      ">
+        <a href="/portfolio" class="navigation-link">Мои работы</a>
+      </li>
+      <li class="navigation-item
+        {% if current == 'contacts' %}
+          current
+        {% endif %}
+      ">
+        <a href="/contacts" class="navigation-link">Связаться со мной</a>
+      </li>
+    </ul>
+  </nav>
+
+  <address class="contacts">
+    <div class="contacts-header">
+      <span class="header-inner-text">Контакты</span>
+    </div>
+    <ul class="contacts-list">
+      <li class="contacts-item contacts-item-mail">
+        <a href="mailto:maxefi@mail.ru" class="contacts-link">
+          <div class="contacts-text">maxefi@mail.ru</div>
+        </a>
+      </li>
+      <li class="contacts-item contacts-item-phone">
+        <a href="tel: +792174071**" class="contacts-link">
+          <span class="contacts-text">+792174071**</span>
+        </a>
+      </li>
+      <li class="contacts-item contacts-item-skype">
+        <a href="skype:max.efi?chat" class="contacts-link">
+          <div class="contacts-text">max.efi</div>
+        </a>
+      </li>
+    </ul>
+  </address>
+</aside>

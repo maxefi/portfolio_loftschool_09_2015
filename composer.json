@@ -9,7 +9,13 @@
     "config": {
       "vendor-dir": "vendor"
     },
+    "autoload": {
+      "classmap": [
+        "app/classes/"
+      ]
+    },
     "require": {
-      "klein/klein": "dev-master"
+      "klein/klein": "dev-master",
+      "twig/twig": "dev-master"
     }
 }

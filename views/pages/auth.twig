@@ -1,0 +1,21 @@
+{% extends 'main_template.twig' %}
+
+{% block auth %}
+<div class="login-wrapper">
+  <h2 class="enter-header">Авторизуйтесь</h2>
+  <div class="login-content clearfix">
+    <form name="loginform" class="login-form">
+      <div class="form-block clearfix">
+        <label for="loginName" class="login-label">Логин</label>
+        <input type="text" id="loginName" placeholder="Введите логин" class="login-input" qtip-content="Ваш логин" qtip-position="right">
+
+        <label for="loginPass" class="login-label">Пароль</label>
+        <input type="password" id="loginName" placeholder="Введите пароль" class="login-input" qtip-content="Ваш пароль" qtip-position="right">
+      </div>
+      <div class="form-block login-btn-center">
+        <input type="submit" value="Войти" class="login-btn login-btn-submit">
+      </div>
+    </form>
+  </div>
+</div>
+{% endblock %}

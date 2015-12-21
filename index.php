@@ -27,6 +27,16 @@ $router->respond('GET', '/portfolio/?', function () use ($templater, $config) {
     $data['config'] = $config;
     $data['title'] = "Портфолио";
     $data['current'] = "portfolio";
+
+    //Получаем данные из БД
+
+    //Устанавливаем подключение к БД
+    ORM::configure('mysql:host='.$config["database"]["host"].';dbname='.$config["database"]["dbname"]);
+    ORM::configure('username', $config["database"]["user"]);
+    ORM::configure('password', $config["database"]["password"]);
+
+    $works = ORM::for_table('portfolio')->find_many();
+    $data['works'] = $works;
     return $templater->display('pages/portfolio', $data);
 });
 

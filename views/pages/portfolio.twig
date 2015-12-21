@@ -6,46 +6,20 @@
   <h2 class="works-header">Мои работы</h2>
     <div class="works-body">
       <ul class="works-list">
+
+        {% for work in works %}
         <li class="works-item">
           <div class="works-hover effect">
-            <img src="{{ config.base_url }}app/img/site1.png" class="works-image" alt="site1"/>
+            <img src="{{ config.base_url }}app/img/{{ work.img }}" class="works-image" alt="{{ work.img }}"/>
             <div class="works-image-hover">
-                    <a class="works-item-hover-btn" href="#" title="View More">Подробнее</a>
-                  </div>
+              <a class="works-item-hover-btn" href="http://{{ work.link }}" title="View More">Подробнее</a>
+            </div>
           </div>
-          <h3 class="works-title" href="#">www.site.ru</h3>
-          <p class="works-info">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, accusantium?</p>
+          <h3 class="works-title" href="#">{{ work.title }}</h3>
+          <p class="works-info">{{ work.description }}</p>
         </li>
-        <li class="works-item">
-          <div class="works-hover effect">
-            <img src="{{ config.base_url }}app/img/site2.png" class="works-image" alt="site1"/>
-            <div class="works-image-hover">
-                    <a class="works-item-hover-btn" href="#" title="View More">Подробнее</a>
-                  </div>
-          </div>
-          <h3 class="works-title" href="#">www.site.ru</h3>
-          <p class="works-info">Lorem ipsum dolor sit amet.</p>
-        </li>
-        <li class="works-item">
-          <div class="works-hover effect">
-            <img src="{{ config.base_url }}app/img/site3.png" class="works-image" alt="site1"/>
-            <div class="works-image-hover">
-                    <a class="works-item-hover-btn" href="#" title="View More">Подробнее</a>
-                  </div>
-          </div>
-          <h3 class="works-title" href="#">www.site.ru</h3>
-          <p class="works-info">Lorem ipsum dolor sit amet.</p>
-        </li>
-        <li class="works-item">
-          <div class="works-hover effect">
-            <img src="{{ config.base_url }}app/img/site4.png" class="works-image" alt="site1"/>
-            <div class="works-image-hover">
-                    <a class="works-item-hover-btn" href="#" title="View More">Подробнее</a>
-                  </div>
-          </div>
-          <h3 class="works-title" href="#">www.site.ru</h3>
-          <p class="works-info">Lorem ipsum dolor sit amet.</p>
-        </li>
+        {% endfor %}
+
         <li class="works-item add-item">
           <a id="works-add-item" class="works-add-link" href="#">Добавить проект</a>
         </li>
